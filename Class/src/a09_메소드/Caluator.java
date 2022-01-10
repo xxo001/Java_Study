@@ -52,6 +52,7 @@ public class Caluator {
 			num2 = in.nextDouble();
 			in.nextLine();
 			
+			in.close();
 			
 			if(cmd == 1) {
 				add(num1, num2);				
