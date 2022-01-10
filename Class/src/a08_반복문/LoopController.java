@@ -111,6 +111,7 @@ public class LoopController {
 		                  System.out.println("오류 : 사용 할 수 없는 명령입니다.");
 		               }
 		            }
+		            in.close();
 		         }
 		         else {
 		            System.out.println("오류 : 사용 할 수 없는 명령입니다.");
