@@ -19,7 +19,7 @@ public class Person {
 
 
 	public void showInfo() {
-		System.out.println("--사람입니다--");
+		System.out.println("----"+name + " 의 정보----");
 	
 	}
 

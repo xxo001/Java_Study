@@ -6,15 +6,9 @@ package a13_다형성2;
  *  classGroup 담임반
  */
 public class Teacher extends Person {
-	private String name;
 	private String subject;
 	private int classYear;
 	private int classGroup;
-	
-	public Teacher() {
-	
-	}
-
 	
 
 	public String getSubject() {
@@ -39,7 +33,7 @@ public class Teacher extends Person {
 	public void studyClass() {
 		// 000선생님이 수업을 합니다
 		
-		System.out.println(getName() + " 선생님이 수업을 합니다");
+		System.out.println(super.getName() + " 선생님이 수업을 합니다");
 		System.out.println();
 	}
 	
@@ -47,7 +41,7 @@ public class Teacher extends Person {
 	@Override
 	public void showInfo() {
 		System.out.println("<선생님정보>");
-		System.out.println("이름 : "+ getName());
+		System.out.println("이름 : "+ super.getName());
 		System.out.println("과목 : "+ subject);
 		System.out.println("담당학년 : "+ classYear);
 		System.out.println("담당반 : "+ classGroup);

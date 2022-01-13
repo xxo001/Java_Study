@@ -7,15 +7,9 @@ package a13_다형성2;
  * 
  */
 public class Student extends Person{
-	private String name ;
 	private int studentYear ;
 	private int studentGroup ;
 	private int studentNumber ;
-	
-	
-	public Student() {
-		
-	}
 	
 
 	public int getStudentYear() {
@@ -40,7 +34,7 @@ public class Student extends Person{
 
 	public void study() {
 	// 000학생이 공부를 합니다.
-		System.out.println(getName() + " 학생이 공부를 합니다");
+		System.out.println(super.getName() + " 학생이 공부를 합니다");
 		System.out.println();
 	}
 	
@@ -48,7 +42,7 @@ public class Student extends Person{
 	@Override
 	public void showInfo() {
 		System.out.println("<학생정보>");
-		System.out.println("이름 : " + getName());
+		System.out.println("이름 : " + super.getName());
 		System.out.println("학년 : " + studentYear);
 		System.out.println("반 : " + studentGroup);
 		System.out.println("번호 : " + studentNumber);
