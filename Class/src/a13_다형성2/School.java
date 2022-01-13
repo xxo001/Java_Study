@@ -17,12 +17,6 @@ public class School {
 		schoolservice.showInfoPerson(persons);
 		
 
-		
-		/* <질문할 내용>
-	     * addTeacher와 addStudent는 업캐스팅 하지않고 생성자를 선언하는데, 배열에 담을 수 있는가 ?
-	     * GitHub 히스토리 삭제하는 법
-	     */
-
 		}
 	}
 
