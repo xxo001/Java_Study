@@ -12,7 +12,7 @@ public class KakaoUserServiceImpl implements UserService {
 		scanner = new Scanner(System.in);
 		userData = new UserData();
 		userData.insertUsers();
-		userData.getUserDataBase();
+		users = userData.getUserDataBase();
 	}
 	
 	//UserService의 메소드들을 override
@@ -20,7 +20,8 @@ public class KakaoUserServiceImpl implements UserService {
 	//배열에 있는 이름과 내가 입력한 이름이 같을때 user를 return, 같지않을때는 null을 return
 	public User getUser() {
 		String username = null;
-		System.out.println("[Kakao 사용자 검색]");userData.getUserDataBase();
+		System.out.println("[Kakao 사용자 검색]");
+		userData.getUserDataBase();
 		System.out.print("아이디 : ");
 		username = scanner.nextLine();
 		for(User user : users) {

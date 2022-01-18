@@ -30,13 +30,13 @@ public class Main {
 			System.out.println();
 		}
 
-		//업캐스팅한 후 기능이 같은 getUser를 사용 --> 업캐스팅으로 인터페이스를 같이만들어주었기 때문
+		//업캐스팅한 후 기능이 같은 getUser를 사용 --> 업캐스팅으로 인터페이스를 같게만들어주었기 때문
 		User user = userService.getUser();
 		if(user == null) {
 			System.out.println("입력하신 계정의 사용자를 찾을 수 없습니다.");
 		}
 		else {
-			System.out.println(userService.toString());
+			System.out.println(user.toString());
 		}
 
 	}

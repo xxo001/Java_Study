@@ -20,7 +20,8 @@ public class NaverUserServiceImpl implements UserService {
 	//배열에 있는 이름과 내가 입력한 이름이 같을때 user를 return, 같지않을때는 null을 return
 	public User getUser() {
 		String username = null;
-		System.out.println("[Naver 사용자 검색]");userData.getUserDataBase();
+		System.out.println("[Naver 사용자 검색]");
+		userData.getUserDataBase();
 		System.out.print("아이디 : ");
 		username = scanner.nextLine();
 		for(User user : users) {
