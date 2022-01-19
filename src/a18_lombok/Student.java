@@ -17,6 +17,7 @@ import lombok.ToString;
 @ToString
 @EqualsAndHashCode
 
+
 public class Student {
 	private String name;
 	private int grade;

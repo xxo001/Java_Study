@@ -8,7 +8,7 @@ import lombok.Data;
 //Entity 객체를 만들기 위해 lombok을 사용 --> 훨씬 용이
 //기본생성자 생성
 @NoArgsConstructor
-//Consturctor생성
+//Constuctor생성
 @AllArgsConstructor
 //getter setter , toString 생성
 @Data
